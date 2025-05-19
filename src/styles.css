@@ -4,6 +4,21 @@
   font-size: 50px;
 }
 
+.App footer {
+  text-align: center;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.App footer a {
+  text-decoration: none;
+}
+
+.App footer a:hover {
+  text-decoration: underline;
+  color: #0b58b1;
+}
+
 .Search {
   display: flex;
   flex-direction: column;
