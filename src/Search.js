@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import ClipLoader from "react-spinners/ClipLoader";
+import { BeatLoader } from "react-spinners";
 
 export default function Search() {
   const [city, setCity] = useState("");
@@ -63,7 +63,7 @@ export default function Search() {
       <div
         style={{ display: "flex", justifyContent: "center", marginTop: "1rem" }}
       >
-        {loading && <ClipLoader color="#007BFF" size={50} />}
+        {loading && <BeatLoader color="#007BFF" size={20} />}
       </div>
 
       {error && <p>{error}</p>}
