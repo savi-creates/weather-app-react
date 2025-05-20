@@ -8,8 +8,15 @@ export default function App() {
       <Search />
 
       <footer style={{ marginTop: "2rem", textAlign: "center" }}>
-        {" "}
-        Coded by Savannah Andresson and {""}
+        Coded by {""}
+        <a
+          href="https://github.com/savi-creates"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Savannah Andresson
+        </a>{" "}
+        and {""}
         <a
           href="https://github.com/savi-creates/weather-app-react"
           target="_blank"
