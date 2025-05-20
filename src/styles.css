@@ -1,13 +1,18 @@
+.App {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
 .App h1 {
-  text-align: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .App footer {
-  text-align: center;
   font-size: 14px;
-  font-family: Arial, sans-serif;
+  color: #6c757d;
+  margin-top: 50px;
 }
 
 .App footer a {
@@ -20,36 +25,15 @@
 }
 
 .Search {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 30px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.Search form {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.Search input[type="search"] {
-  padding: 10px;
-  font-size: 16px;
-}
-
-.Search input[type="submit"] {
-  padding: 10px 20px;
-  font-size: 16px;
-  background: #0077ff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
 .Search p {
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 25px;
   color: #333;
+}
+
+.Search form * {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
 }

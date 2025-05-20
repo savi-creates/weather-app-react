@@ -51,31 +51,45 @@ export default function Search() {
 
   return (
     <div className="Search">
-      <form onSubmit={handleSubmit}>
+      <form
+        onSubmit={handleSubmit}
+        className="d-flex justify-content-center align-items-center gap-2 mb-4"
+      >
         <input
           type="search"
           placeholder="Enter a city..."
+          className="form-control"
           onChange={updateCity}
+          style={{ maxWidth: "300px" }}
         />
-        <input type="submit" value="Search" />
+        <button type="submit" className="btn btn-primary">
+          Search
+        </button>
       </form>
 
-      <div
-        style={{ display: "flex", justifyContent: "center", marginTop: "1rem" }}
-      >
+      <div className="text-center my-3">
         {loading && <BeatLoader color="#007BFF" size={20} />}
       </div>
-
-      {error && <p>{error}</p>}
+      {error && (
+        <div
+          className="alert alert-danger text-center"
+          style={{ maxWidth: "400px", margin: "0 auto" }}
+        >
+          {error}
+        </div>
+      )}
 
       {weather && (
-        <div>
-          <h2>{weather.city}</h2>
-          <p>🌡️ Temperature: {weather.temperature}ºC</p>
-          <p>📝 Description: {weather.description}</p>
-          <p>💧 Humidity: {weather.humidity}%</p>
-          <p>🌬️ Wind: {weather.wind} km/h</p>
-          <img src={weather.icon} alt={weather.description} />
+        <div className="card text-center mx-auto" style={{ maxWidth: "400px" }}>
+          <div className="card-body">
+            <h2 className="card-title fs-1">{weather.city}</h2>
+            <br />
+            <p className="card-text">🌡️ Temperature: {weather.temperature}ºC</p>
+            <p className="card-text">📝 Description: {weather.description}</p>
+            <p className="card-text">💧 Humidity: {weather.humidity}%</p>
+            <p className="card-text">🌬️ Wind: {weather.wind} km/h</p>
+            <img src={weather.icon} alt={weather.description} />
+          </div>
         </div>
       )}
     </div>

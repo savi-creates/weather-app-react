@@ -5,10 +5,10 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <h1>Weather Search Engine</h1>
+        <h1 className="text-center my-5">Weather Search Engine</h1>
         <Search />
 
-        <footer style={{ marginTop: "2rem", textAlign: "center" }}>
+        <footer className="text-center mt-5">
           Coded by {""}
           <a
             href="https://github.com/savi-creates"
